@@ -109,11 +109,7 @@ body {
 
   select[name="country"] {
     background-color: rgba(
-      247,
-      168,
-      9,
-      0.744
-    );
+      247,168,9,0.744);
     color: white;
     font-family: Cambria, Cochin,
       Georgia, Times, "Times New Roman",
@@ -133,3 +129,4 @@ body {
     resize: none;
   }
 }
+
