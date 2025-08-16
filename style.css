@@ -1,0 +1,135 @@
+body {
+  ]background: #e31919;
+  background: linear-gradient(
+    90deg,
+    rgb(72, 42, 433) 0%,
+    rgb(52, 244, 206) 0%,
+    rgba(233, 213, 32, 1) 51%,
+    rgb(23, 33, 13) 100%
+  );
+
+  h1 {
+    font-family: "Bungee", sans-serif;
+  }
+
+  form {
+    width: 600px;
+  }
+
+  fieldset {
+    border: 5px solid black;
+    border-radius: 15px;
+  }
+
+  legend {
+    font-family: Cambria, Cochin,
+      Georgia, Times, "Times New Roman",
+      serif;
+  }
+
+  input[type="reset"] {
+    border-radius: 10px;
+  }
+
+  input[type="submit"] {
+    border-radius: 10px;
+  }
+  input[required] {
+    border: 3px solid red;
+  }
+
+  input:hover {
+    background-color: yellow;
+  }
+
+  input:focus {
+    background: #660c0c;
+    background: linear-gradient(
+      90deg,
+      rgb(244, 244, 244) 12%,
+      rgb(254, 253, 253) 23%,
+      rgb(229, 226, 183) 45%,
+      rgba(128, 128, 209, 1) 88%
+    );
+  }
+  input[readonly] {
+    font-family: Verdana, Geneva, Tahoma,
+      sans-serif;
+
+    font-weight: bold;
+    background-color: yellow;
+  }
+
+  input + span {
+    display: none;
+  }
+  input:hover + span {
+    display: inline;
+    background-color: cornsilk;
+    font-weight: 600;
+    font-size: medium;
+  }
+  input + p {
+    display: none;
+  }
+  input:hover + span {
+    display: inline;
+    background-color: cornsilk;
+    font-weight: 600;
+    font-size: medium;
+  }
+  img {
+    display: none;
+  }
+  input[type="email"]:focus:valid
+    ~ img#valid {
+    display: inline;
+    height: 17px;
+    width: 17px;
+  }
+  input[type="email"]:focus:invalid
+    ~ img#invalid {
+    display: inline;
+    height: 17px;
+    width: 17px;
+  }
+
+  input[type="number"]:focus:valid
+    ~ img#valid {
+    display: inline;
+    height: 17px;
+    width: 17px;
+  }
+  input[type="number"]:focus:invalid
+    ~ img#invalid {
+    display: inline;
+    height: 17px;
+    width: 17px;
+  }
+
+  select[name="country"] {
+    background-color: rgba(
+      247,
+      168,
+      9,
+      0.744
+    );
+    color: white;
+    font-family: Cambria, Cochin,
+      Georgia, Times, "Times New Roman",
+      serif;
+    font-weight: 900;
+    font-size: medium;
+  }
+  input[type="radio"]:checked {
+    height: 20px;
+  }
+  input[type="radio"]:checked + label {
+    font-weight: 800;
+    font-size: larger;
+    color: blue;
+  }
+  textarea {
+    resize: none;
+  }
+}
